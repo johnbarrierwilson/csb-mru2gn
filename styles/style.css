@@ -4,6 +4,10 @@
   --color-linkedin: #0a66c2;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   background: #111111;
   color: #bbbbbb;
@@ -19,12 +23,6 @@ html {
 
 body {
   font-family: system-ui, Helvetica, Arial, sans-serif;
-  padding: 20px;
-}
-@media only screen and (min-width: 550px) {
-  body {
-    padding: 20px 50px;
-  }
 }
 
 h1 {
@@ -110,13 +108,15 @@ p:last-of-type {
 
 .wrapper {
   margin: 0 auto;
-  padding: 40px 0;
+  overflow: hidden;
+  padding: 40px 20px;
   max-width: 640px;
   position: relative;
   width: 100%;
 }
 @media only screen and (min-width: 550px) {
   .wrapper {
-    padding: 60px 0;
+    overflow: visible;
+    padding: 60px 20px;
   }
 }
